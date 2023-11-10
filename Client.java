@@ -18,11 +18,11 @@ public class Client {
         this.Balance = balance;
     }
 
-    public void setUserId() {
-        //Function from System to set User Id
+    public void setUserId(int id) {
+        this.UserId = id;
     }
 
-    public void setCreditLine(float balance) {
+    public void setCreditLine() {
         this.CreditLine = calculateCreditLine('P');
     }
 
@@ -52,16 +52,16 @@ public class Client {
         switch (clientType) {
             case 'P':
                 
-                float creditLine = this.Balance * 1.45f;;
+                float creditLine = 10000.00f;
                 return creditLine;
             
             case 'B':
                 
-                creditLine = this.Balance * 1.65f;;
+                creditLine = 20000.00f;
                 return creditLine;
 
             default:
-                creditLine = this.Balance;
+                creditLine = 5000.00f;
                 return creditLine;
         }
     }

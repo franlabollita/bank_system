@@ -7,6 +7,7 @@ public class Main {
 
         // Call a method from test.java
         tester.testUsers();
+        tester.testSystem();
 
         // Use user or tester objects as needed
     }
